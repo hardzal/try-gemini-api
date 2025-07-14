@@ -4,7 +4,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./dist",
-    "dev": "nodemon --watch './src/**/*.ts' --exec ts-node --files ./src/index.ts",
+    "dev": "nodemon --watch './src/**/*.ts' --exec ts-node --files ./src/app.ts",
     "build": "tsc",
     "lint": "eslint . --ext .ts"
   },
@@ -13,9 +13,11 @@
   "description": "",
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
-    "dotenv": "^16.6.1"
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0"
   },
   "devDependencies": {
+    "@types/express": "^5.0.3",
     "@types/node": "^20.6.0",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.6.0",
